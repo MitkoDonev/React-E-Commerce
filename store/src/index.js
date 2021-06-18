@@ -9,11 +9,13 @@ import { ProductProvider } from "./context";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <ProductProvider>
-    <Router>
-      <App />
-    </Router>
-  </ProductProvider>,
+  <React.StrictMode>
+    <ProductProvider>
+      <Router>
+        <App />
+      </Router>
+    </ProductProvider>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
